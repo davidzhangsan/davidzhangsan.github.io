@@ -13,18 +13,18 @@
 title: My Website
 
 # Your name to show in the footer
-author: Some Person
+author: Lyuxin (David) Zhang
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "I'm a freshman studying CS and Math at the University of Pennsylvania."
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Author's home: "https://davidzhangsan.github.io"
 
 ################
 # --- Logo --- #
