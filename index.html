@@ -24,15 +24,22 @@
                   Lyuxin (David) Zhang
                 </p>
                 <p>
-                  I'm a student at the <a href="https://www.upenn.edu/">University of Pennsylvania</a>, studying Computer Science and Mathematics.
-                  My research interests are in machine learning, AI security, and the robustness of large language models.
-                  <!-- EDIT ME: update this bio. Add advisor, lab, links to projects, etc. -->
+                  I'm an undergraduate and accelerated master's student at the <a href="https://www.upenn.edu/">University of Pennsylvania</a>,
+                  studying Computer Science &amp; Mathematics (B.A.) and Data Science (M.S.E.), graduating in 2027.
+                </p>
+                <p>
+                  My research is on <strong>trustworthy machine learning</strong> and the <strong>science of large language models</strong> &mdash;
+                  including in-context learning, LLM reasoning and abstention, and AI-generated text detection.
+                  I'm fortunate to be advised by <a href="https://www.surbhigoel.com/">Surbhi Goel</a> and
+                  <a href="https://www.eric-wong.com/">Eric Wong</a> at the <a href="https://www.asset.seas.upenn.edu/">Penn ASSET Center for Trustworthy AI</a>,
+                  and I've worked with <a href="https://www.cis.upenn.edu/~danroth/">Dan Roth</a> and
+                  <a href="https://www.cis.upenn.edu/~ccb/">Chris Callison-Burch</a>.
                 </p>
                 <p style="text-align:center">
-                  <a href="mailto:lyuxin.zhang@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="mailto:davidzlx@sas.upenn.edu">Email</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=YOUR_ID_HERE">Scholar</a> &nbsp;/&nbsp;
                   <a href="https://github.com/davidzhangsan/">Github</a>
-                  <!-- EDIT ME: replace YOUR_ID_HERE in the Scholar link with your Google Scholar user id -->
+                  <!-- EDIT ME: replace YOUR_ID_HERE with your Google Scholar user id, or remove the Scholar link -->
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
@@ -48,43 +55,81 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  My work focuses on machine learning and AI security. Selected projects and publications will appear here.
-                  <!-- EDIT ME: describe your research; some papers can be marked with <span class="highlight">highlighted</span>. -->
+                  I'm broadly interested in understanding and improving the reliability of modern machine learning systems:
+                  how in-context learning works and how to select demonstrations for it, when and why large language models
+                  reason correctly or abstain, and how to detect machine-generated text. <span class="highlight">*</span> denotes equal contribution.
                 </p>
               </td>
             </tr>
           </tbody></table>
 
-          <!-- ============ PUBLICATIONS LIST ============
-               To add a paper, copy the <tr>...</tr> block below and fill it in.
-               Put the thumbnail at images/<name>.jpg (or .gif). -->
+          <!-- ============ PUBLICATIONS ============ -->
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <!-- ====== PAPER TEMPLATE (copy this block per paper) ======
             <tr>
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src='images/paper-thumb.jpg' width=100%>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="PROJECT_OR_PAPER_URL">
-                  <span class="papertitle">Paper Title Goes Here</span>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2602.04853">
+                  <span class="papertitle">Decomposed Prompting Does Not Fix Knowledge Gaps, But Helps Models Say &ldquo;I Don't Know&rdquo;</span>
                 </a>
                 <br>
-                <strong>Lyuxin Zhang</strong>,
-                Coauthor Name
+                Dhruv Madhwal*,
+                <strong>Lyuxin (David) Zhang</strong>*,
+                Dan Roth,
+                Tomer Wolfson,
+                Vivek Gupta
                 <br>
-                <em>Venue</em>, 2026
+                <em>Findings of ACL</em>, 2026
                 <br>
-                <a href="PROJECT_URL">project page</a>
-                /
-                <a href="ARXIV_URL">arXiv</a>
+                <a href="https://arxiv.org/abs/2602.04853">arXiv</a>
                 <p></p>
                 <p>
-                One-sentence summary of the paper.
+                  Question decomposition does not resolve a model's core knowledge gaps, but it does improve selective
+                  abstention &mdash; helping models recognize and say when they don't know.
                 </p>
               </td>
             </tr>
-            ====== END PAPER TEMPLATE ====== -->
+
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2505.13855">
+                  <span class="papertitle">DoGEN: Domain-Specific Text Detection with Parameter-Efficient Routing and Large-Ensemble Baselines</span>
+                </a>
+                <br>
+                Arihant Tripathi*,
+                Liam Dugan*,
+                Charis Gao,
+                Maggie Huan,
+                Emma Jin,
+                Peter Zhang,
+                <strong>Lyuxin (David) Zhang</strong>,
+                Julia Zhao,
+                Chris Callison-Burch
+                <br>
+                <em>arXiv preprint</em>, 2025
+                <br>
+                <a href="https://arxiv.org/abs/2505.13855">arXiv</a>
+                <p></p>
+                <p>
+                  A domain-specific AI-generated-text detector using parameter-efficient routing, reaching 97.6% AUROC on
+                  MAGE and 95.8% on RAID with a strong accuracy&ndash;efficiency tradeoff.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <span class="papertitle">Representation-based example selection for in-context learning using active learning principles</span>
+                <br>
+                <strong>Lyuxin (David) Zhang</strong>
+                <br>
+                <em>Manuscript in preparation</em>
+                <p></p>
+                <p>
+                  A theory- and representation-driven study of how demonstration choice shapes in-context learning &mdash;
+                  its optimization dynamics, attribution patterns, and downstream generalization.
+                </p>
+              </td>
+            </tr>
 
           </tbody></table>
 
