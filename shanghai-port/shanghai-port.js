@@ -5,12 +5,14 @@
     { file: '01-players-and-fans.jpg', alt: 'Shanghai Port players greeting a stadium full of supporters in red.' },
     { file: '02-matchday-friends.jpg', alt: 'Three friends in red Shanghai Port jerseys taking a selfie in the stadium stands.' },
     { file: '03-derby-scoreboard.jpg', alt: 'A stadium scoreboard showing Shanghai Port leading Shanghai Shenhua two to zero.' },
-    { file: '04-in-the-stands.jpg', alt: 'Friends wearing Shanghai Port jerseys and scarves among supporters in the stands.' },
+    { file: '04-in-the-stands-updated.jpg', alt: 'Three friends wearing Shanghai Port jerseys and scarves taking a selfie in the stands.' },
     { file: '05-away-stadium.jpg', alt: 'A view across the soccer pitch and crowded stands before a Shanghai Port away match.' },
-    { file: '06-outside-stadium.jpg', alt: 'Two friends in Shanghai Port jerseys taking a selfie outside a stadium at night.' }
+    { file: '06-outside-stadium.jpg', alt: 'Two friends in Shanghai Port jerseys taking a selfie outside a stadium at night.' },
+    { file: '07-outdoor-selfie.jpg', alt: 'Four people smiling together for an outdoor selfie.' },
+    { file: '08-supporters-group.jpg', alt: 'Shanghai Port supporters posing on a soccer pitch behind a red banner reading We Are Red.' }
   ];
 
-  const storageKey = 'david-shanghai-port-shuffle-v1';
+  const storageKey = 'david-shanghai-port-shuffle-v2';
   const photo = document.getElementById('shanghai-port-photo');
   let state = { remaining: [], last: null };
 
