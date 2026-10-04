@@ -2,18 +2,16 @@
   'use strict';
 
   const photos = [
-    { file: '01-indoor.jpg', alt: 'A player in a white soccer kit running past a referee on an indoor pitch.' },
-    { file: '02-under-the-lights.jpg', alt: 'Number 47 watching play on a floodlit soccer pitch at night.' },
-    { file: '03-city-pitch.jpg', alt: 'Soccer players walking across a night-time pitch beneath a blue-lit city skyline.' },
-    { file: '04-on-the-ball.jpg', alt: 'A player in a white number 10 jersey dribbling with an opponent in pursuit.' },
-    { file: '05-good-company.jpg', alt: 'A group of teammates posing together on a city soccer pitch under floodlights.' },
-    { file: '06-after-hours.jpg', alt: 'Two friends standing together on a soccer pitch beneath the night sky.' },
-    { file: '07-teammates.jpg', alt: 'Three teammates in red Pennington jerseys smiling on the grass.' },
-    { file: '08-city-teammates.jpg', alt: 'A group of soccer teammates in red jerseys posing on a city pitch at dusk.' }
+    { file: '01-players-and-fans.jpg', alt: 'Shanghai Port players greeting a stadium full of supporters in red.' },
+    { file: '02-matchday-friends.jpg', alt: 'Three friends in red Shanghai Port jerseys taking a selfie in the stadium stands.' },
+    { file: '03-derby-scoreboard.jpg', alt: 'A stadium scoreboard showing Shanghai Port leading Shanghai Shenhua two to zero.' },
+    { file: '04-in-the-stands.jpg', alt: 'Friends wearing Shanghai Port jerseys and scarves among supporters in the stands.' },
+    { file: '05-away-stadium.jpg', alt: 'A view across the soccer pitch and crowded stands before a Shanghai Port away match.' },
+    { file: '06-outside-stadium.jpg', alt: 'Two friends in Shanghai Port jerseys taking a selfie outside a stadium at night.' }
   ];
 
-  const storageKey = 'david-soccer-shuffle-v2';
-  const photo = document.getElementById('soccer-photo');
+  const storageKey = 'david-shanghai-port-shuffle-v1';
+  const photo = document.getElementById('shanghai-port-photo');
   let state = { remaining: [], last: null };
 
   // A shuffled deck survives refreshes. Exhaust all photos before dealing again.
@@ -27,7 +25,7 @@
       state = saved;
     }
   } catch (_) {
-    // The page still works when browser storage is unavailable.
+    // The image still loads when browser storage is unavailable.
   }
 
   function drawPhoto() {
@@ -49,7 +47,7 @@
     try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch (_) {}
     const selected = photos[index];
     photo.alt = selected.alt;
-    photo.src = '../images/soccer/' + selected.file;
+    photo.src = '../images/shanghai-port/' + selected.file;
   }
 
   drawPhoto();
