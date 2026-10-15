@@ -1,37 +1,21 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Soccer</title>
-
-    <script defer="" src="soccer.js"></script>
-    <link href="../stylesheet.css" rel="stylesheet" />
+    <style>
+      html, body { margin: 0; width: 100%; height: 100%; background: #0e0e0e; }
+      body { display: grid; place-items: center; }
+      img { display: block; width: auto; height: auto; max-width: 100%; max-height: 100vh; max-height: 100dvh; }
+    </style>
+    <script src="soccer.js" defer></script>
   </head>
-  <body class="gallery-page">
-    <header class="gallery-bar">
-      <a class="gallery-back" href="../"
-        ><span aria-hidden="true">←</span> Back to home</a
-      >
-      <h1>Soccer</h1>
-      <button hidden="" id="next-photo" type="button">
-        Another photo <span aria-hidden="true">↗</span>
-      </button>
-    </header>
-    <main aria-label="Soccer photos" class="gallery-main">
-      <img alt="Soccer photo" fetchpriority="high" id="soccer-photo" />
-      <noscript>
-        <style>
-          #soccer-photo {
-            display: none;
-          }
-        </style>
-        <img
-          alt="A player running on an indoor soccer pitch."
-          src="../images/soccer/01-indoor.jpg"
-        />
-      </noscript>
-    </main>
+  <body>
+    <img id="soccer-photo" alt="Soccer photo" fetchpriority="high">
+    <noscript>
+      <style>#soccer-photo { display: none; }</style>
+      <img src="../images/soccer/01-indoor.jpg" alt="A player running on an indoor soccer pitch.">
+    </noscript>
   </body>
 </html>
