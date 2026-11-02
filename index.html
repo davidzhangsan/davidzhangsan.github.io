@@ -217,13 +217,19 @@
           <!-- ============ PROJECTS ============ -->
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
+              <td style="padding:16px;width:100%;vertical-align:middle" colspan="2">
                 <h2>Selected Projects</h2>
               </td>
             </tr>
 
             <tr>
-              <td style="padding:16px;width:100%;vertical-align:top">
+              <td style="padding:16px;width:25%;vertical-align:top">
+                <video muted autoplay loop playsinline style="width:100%;border-radius:4px;animation:none;filter:none;" onloadeddata="this.playbackRate = 1.5;">
+                  <source src="images/drone_racing.mp4" type="video/mp4">
+                  Drone racing simulation video.
+                </video>
+              </td>
+              <td style="padding:16px;width:75%;vertical-align:top">
                 <span class="papertitle">Drone Racing Policy Learning with Reinforcement Learning</span>
                 <ul>
                   <li>Final project for ESE 6510 (Physical Intelligence: Science and Systems); placed third in the final class challenge on deploying a simulation-trained policy on a real drone.</li>
@@ -234,7 +240,10 @@
             </tr>
 
             <tr>
-              <td style="padding:16px;width:100%;vertical-align:top">
+              <td style="padding:16px;width:25%;vertical-align:top">
+                <a href="images/embedding_nonisotropic.png"><img src="images/embedding_nonisotropic.png" width="100%" style="border-radius:4px;" alt="Training loss curves for transformer in-context learning"></a>
+              </td>
+              <td style="padding:16px;width:75%;vertical-align:top">
                 <span class="papertitle">Training Dynamics of Transformers for In-Context Learning</span>
                 <ul>
                   <li>Built a PyTorch benchmarking suite for transformer in-context linear regression.</li>
@@ -244,7 +253,10 @@
             </tr>
 
             <tr>
-              <td style="padding:16px;width:100%;vertical-align:top">
+              <td style="padding:16px;width:25%;vertical-align:top">
+                <a href="images/underflow.png"><img src="images/underflow.png" width="100%" style="border-radius:4px;" alt="Underflow system architecture: CLI, FastAPI backend, MySQL, and Next.js dashboard"></a>
+              </td>
+              <td style="padding:16px;width:75%;vertical-align:top">
                 <span class="papertitle">Repository Intelligence CLI</span>
                 <ul>
                   <li>Built a FastAPI/Uvicorn and MySQL backend with a CLI client using the GitHub and OpenAI APIs.</li>
