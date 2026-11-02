@@ -162,3 +162,26 @@ span.highlight {
   outline: 2px solid #1772d0;
   outline-offset: -4px;
 }
+
+.section-dropdown-right > summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.section-dropdown-right > summary::-webkit-details-marker {
+  display: none;
+}
+
+.section-dropdown-right > summary::after {
+  content: "";
+  flex-shrink: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid currentColor;
+}
+
+.section-dropdown-right[open] > summary::after {
+  transform: rotate(90deg);
+}
