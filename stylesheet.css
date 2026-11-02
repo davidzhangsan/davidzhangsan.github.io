@@ -185,3 +185,9 @@ span.highlight {
 .section-dropdown-right[open] > summary::after {
   transform: rotate(90deg);
 }
+
+@media (min-width: 900px) {
+  .page-layout {
+    zoom: 0.9;
+  }
+}
