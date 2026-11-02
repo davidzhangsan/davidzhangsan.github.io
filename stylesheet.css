@@ -140,3 +140,25 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+.section-dropdown {
+  margin: 10px 0;
+}
+
+.section-dropdown > summary {
+  padding: 16px;
+  cursor: pointer;
+}
+
+.section-dropdown > summary h2 {
+  display: inline;
+}
+
+.section-dropdown > summary:hover {
+  color: #1772d0;
+}
+
+.section-dropdown > summary:focus-visible {
+  outline: 2px solid #1772d0;
+  outline-offset: -4px;
+}
