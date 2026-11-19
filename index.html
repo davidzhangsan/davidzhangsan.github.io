@@ -32,7 +32,12 @@
 
     <section id="research" aria-labelledby="research-title">
       <h2 id="research-title">Research</h2>
-      <p class="interests">My research interests include looped transformers and their generalization, data selection for LLM post-training, and multi-hop question answering and exhaustive search with LLM agents.</p>
+      <p class="interests-intro">My research interests include</p>
+      <ul class="interests">
+        <li>Looped transformers and their generalization</li>
+        <li>Data selection for LLM post-training</li>
+        <li>Multi-hop question answering and exhaustive search with LLM agents</li>
+      </ul>
       <div class="publications">
         <article class="paper">
           <h3><a href="https://arxiv.org/pdf/2610.03702"> LESSER: Post-Training Data Selection with Output-Layer Gradients </a></h3>
@@ -91,10 +96,16 @@
 
     <details class="archive" id="projects">
       <summary><h2>Selected Projects</h2></summary>
-      <article class="project">
-        <div class="project-media"><video muted loop playsinline onloadeddata="this.playbackRate = 1.5;" controls="" preload="none"> <source src="images/drone_racing.mp4" type="video/mp4"> Drone racing simulation video. </source></video></div>
+      <article class="project drone-project" aria-labelledby="drone-racing">
+        <h3 id="drone-racing">Drone Racing Policy Learning with Reinforcement Learning</h3>
+        <div class="project-media">
+          <video muted loop playsinline controls preload="none" width="1280" height="720"
+                 poster="images/drone-racing-poster.jpg" aria-label="Drone racing simulation">
+            <source src="images/drone_racing.mp4" type="video/mp4">
+            <a href="images/drone_racing.mp4">Open the drone racing video</a>
+          </video>
+        </div>
         <div>
-          <h3>Drone Racing Policy Learning with Reinforcement Learning</h3>
           <ul>
             <li>Final project for ESE 6510 (Physical Intelligence: Science and Systems); placed third in the final class challenge on deploying a simulation-trained policy on a real drone.</li>
             <li>Reproduced a drone racing control method in NVIDIA Isaac Lab with PPO.</li>
@@ -133,5 +144,16 @@
     </section>
   </main>
   <footer>Template based on <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron’s website</a>.</footer>
+  <script>
+    const projects = document.getElementById("projects");
+    const droneVideo = projects.querySelector("video");
+    projects.addEventListener("toggle", () => {
+      if (!projects.open) {
+        droneVideo.pause();
+      } else if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        droneVideo.play().catch(() => { /* The native play button remains available. */ });
+      }
+    });
+  </script>
 </body>
 </html>
