@@ -140,7 +140,7 @@ h3 { font-size: 1.09rem; line-height: 1.35; font-weight: 700; }
 .awards { list-style: none; padding: 0; margin: 0 0 1.25rem; }
 .awards li { display: grid; grid-template-columns: 3rem 1fr; gap: .7rem; margin-bottom: .5rem; }
 .awards time { color: var(--muted); font-variant-numeric: tabular-nums; }
-.project { display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 1.25rem; padding: .45rem 0 1.3rem; }
+.project { display: grid; grid-template-columns: 12rem minmax(0, 1fr); align-items: start; gap: 1.25rem; padding: .45rem 0 1.3rem; }
 .project-media img, .project-media video { display: block; width: 100%; height: auto; }
 .project ul { padding-left: 1.1rem; margin: .3rem 0 0; }
 footer { padding-top: 1.1rem; font-size: .85rem; }
@@ -157,13 +157,5 @@ footer a { color: inherit; }
   h1 { font-size: clamp(1.95rem, 6.5vw, 2.55rem); }
   .portrait { margin: 0; }
   .project { grid-template-columns: 1fr; gap: .65rem; }
-  .project-media { max-width: 13rem; }
-}
-
-.drone-project h3 { grid-column: 1 / -1; }
-.drone-project { row-gap: .65rem; }
-.drone-project .project-media { max-width: none; }
-.drone-project video { aspect-ratio: 16 / 9; background: #18212a; }
-@media (min-width: 42.01rem) {
-  .drone-project { grid-template-columns: minmax(16rem, 42%) minmax(0, 1fr); }
+  .project-media { width: 100%; max-width: 22rem; }
 }
