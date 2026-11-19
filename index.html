@@ -1,296 +1,137 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Lyuxin David Zhang">
+  <meta name="description" content="Lyuxin David Zhang studies how language models learn, generalize, and reason at the University of Pennsylvania.">
+  <title>Lyuxin David Zhang</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <a class="skip-link" href="#research">Skip to research</a>
+  <main>
+    <header class="profile" aria-labelledby="name">
+      <h1 id="name">Lyuxin David Zhang</h1>
+      <a class="portrait" href="images/profile.jpg" aria-label="View full portrait of Lyuxin David Zhang">
+        <img src="images/profile.jpg" width="600" height="600" alt="Lyuxin David Zhang">
+      </a>
+      <div class="bio">
+        <p>Hi! I’m an undergraduate and accelerated master’s student at the University of Pennsylvania, studying Computer Science &amp; Mathematics (B.A.) and Data Science (M.S.E.). <strong>I’m looking for PhD opportunities starting in Fall 2027!</strong></p>
+        <p>I’m interested in principled approaches to machine learning, combining mathematical insights with empirical research to understand how language models learn and generalize. I also think about how to make them more useful in practice, with a focus on reasoning.</p>
+        <p>At UPenn, I am fortunate to work with <a href="https://www.surbhigoel.com/">Surbhi Goel</a>, <a href="https://www.cis.upenn.edu/~exwong/">Eric Wong</a>, and <a href="https://www.cis.upenn.edu/~danroth/">Dan Roth</a>, and have collaborated with <a href="https://www.cis.upenn.edu/~ccb/">Chris Callison-Burch</a>.</p>
+        <p>Outside of research, <a href="soccer/">I play soccer</a> and follow <a href="shanghai-port/">Shanghai Port</a>.</p>
+        <nav class="contact" aria-label="Contact and profiles">
+          <a href="mailto:davidzlx@sas.upenn.edu">Email</a>
+          <a href="https://scholar.google.com/citations?user=WS4r6T0AAAAJ&amp;hl=en">Google Scholar</a>
+          <a href="https://github.com/davidzhangsan/">GitHub</a>
+          <a href="https://x.com/davidzhangsan">X</a>
+        </nav>
+      </div>
+    </header>
 
-    <title>Lyuxin David Zhang</title>
+    <section id="research" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <p class="interests">My research interests include looped transformers and their generalization, data selection for LLM post-training, and multi-hop question answering and exhaustive search with LLM agents.</p>
+      <div class="publications">
+        <article class="paper">
+          <h3><a href="https://arxiv.org/pdf/2610.03702"> LESSER: Post-Training Data Selection with Output-Layer Gradients </a></h3>
+          <p class="authors"><strong>Lyuxin David Zhang</strong>, <a href="https://www.cis.upenn.edu/~exwong/">Eric Wong</a>, <a href="https://www.surbhigoel.com/">Surbhi Goel</a>, <a href="https://antonxue.github.io/">Anton Xue</a></p>
+          <p class="venue"><em>Under review at ICLR 2027</em></p>
+          <p class="workshop">Preliminary version, <a href="https://sites.google.com/view/moss-colm-2026/home">Workshop on Methods and Opportunities at Small Scale</a> @ COLM, 2026</p>
+          <div class="resources">
+            <a href="https://arxiv.org/abs/2610.03702">arXiv</a>
+            <a href="https://arxiv.org/pdf/2610.03702">PDF</a>
+            <a href="https://github.com/davidzhangsan/LESSER">Code</a>
+          </div>
+        </article>
 
-    <meta name="author" content="Lyuxin David Zhang">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <article class="paper">
+          <h3>MExAS: Measuring Exhaustive Agentic Search</h3>
+          <p class="authors"><strong>Lyuxin David Zhang</strong>, <a href="https://tomerwolgithub.github.io/">Tomer Wolfson</a>, <a href="https://jchy20.github.io/">Hongyi James Cai</a>, <a href="https://www.cis.upenn.edu/~danroth/">Dan Roth</a></p>
+          <p class="venue"><em>Coming soon</em></p>
+        </article>
 
-  </head>
+        <article class="paper">
+          <h3><a href="https://aclanthology.org/2026.findings-acl.1829.pdf"> Decomposed Prompting Does Not Fix Knowledge Gaps, But Helps Models Say “I Don't Know” </a></h3>
+          <p class="authors"><a href="https://dhruvmadhwal.github.io/">Dhruv Madhwal</a>*, <strong>Lyuxin David Zhang</strong>*, <a href="https://www.cis.upenn.edu/~danroth/">Dan Roth</a>, <a href="https://tomerwolgithub.github.io/">Tomer Wolfson</a>, <a href="https://vgupta123.github.io/">Vivek Gupta</a></p>
+          <p class="venue"><em>Findings of ACL</em>, 2026</p>
+          <div class="resources">
+            <a href="https://arxiv.org/abs/2602.04853">arXiv</a>
+            <a href="https://aclanthology.org/2026.findings-acl.1829.pdf">PDF</a>
+            <a href="https://github.com/dhruvmadhwal/disagreement-based-abstention">Code</a>
+          </div>
+        </article>
 
-  <body>
-    <table class="page-layout" style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
+        <article class="paper">
+          <h3><a href="https://arxiv.org/pdf/2505.13855"> Domain Gating Ensemble Networks for AI-Generated Text Detection </a></h3>
+          <p class="authors">Arihant Tripathi*, <a href="https://liamdugan.com/">Liam Dugan</a>*, Charis Gao, Maggie Huan, Emma Jin, Peter Zhang, <strong>Lyuxin David Zhang</strong>, Julia Zhao, <a href="https://www.cis.upenn.edu/~ccb/">Chris Callison-Burch</a></p>
+          <p class="venue"><em>arXiv preprint</em>, 2025</p>
+          <div class="resources">
+            <a href="https://arxiv.org/abs/2505.13855">arXiv</a>
+            <a href="https://arxiv.org/pdf/2505.13855">PDF</a>
+          </div>
+        </article>
+      </div>
+      <p class="contribution">* denotes equal contribution.</p>
+    </section>
 
-          <!-- ============ HEADER: name, bio, links ============ -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5% 2.5% 6px;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Lyuxin David Zhang
-                </p>
-                <p>
-                  Hi! I'm an undergraduate and accelerated master's student at the University of Pennsylvania,
-                  studying Computer Science &amp; Mathematics (B.A.) and Data Science (M.S.E.).
-                  <strong>I'm looking for PhD opportunities starting in Fall 2027!</strong>
-                </p>
-                <p>
-                  I’m interested in principled approaches to machine learning, combining mathematical insights
-                  with empirical research to understand how language models learn and generalize.
-                  I also think about how to make them more useful in practice, with a focus on reasoning.
-                  At UPenn, I am fortunate to work with <a href="https://www.surbhigoel.com/">Surbhi Goel</a>,
-                  <a href="https://www.cis.upenn.edu/~exwong/">Eric Wong</a>, and
-                  <a href="https://www.cis.upenn.edu/~danroth/">Dan Roth</a>, and have collaborated with
-                  <a href="https://www.cis.upenn.edu/~ccb/">Chris Callison-Burch</a>.
-                </p>
-                <p>
-                  Outside of research, <a href="soccer/" style="color: #444;">I play soccer</a> and follow
-                  <a href="shanghai-port/" style="color: #444;">Shanghai Port</a>.
-                </p>
-                <p style="text-align:center;margin-bottom:0;">
-                  <a href="mailto:davidzlx@sas.upenn.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=WS4r6T0AAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/davidzhangsan/">Github</a> &nbsp;/&nbsp;
-                  <a href="https://x.com/davidzhangsan">X</a>
-                </p>
-              </td>
-              <td style="padding:2.5% 2.5% 6px;width:37%;max-width:37%">
-                <a href="images/profile.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="Lyuxin David Zhang" src="images/profile.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
+    <details class="archive" id="awards">
+      <summary><h2>Fellowships &amp; Awards</h2></summary>
+      <ul class="awards">
+        <li><time>2026</time><span>College of Arts &amp; Sciences Travel Grant, UPenn Center for Undergraduate Research and Fellowships ($1,500).</span></li>
+        <li><time>2026</time><span>Ruth Marcus Kanter College Alumni Society Undergraduate Research Grant, UPenn Center for Undergraduate Research and Fellowships ($1,000).</span></li>
+        <li><time>2026</time><span>Modal Academics Computing Grant, Modal Labs ($2,000).</span></li>
+        <li><time>2026</time><span>Tinker Research Grant, Thinking Machines Lab ($5,000).</span></li>
+        <li><time>2024</time><span>Pincus–Magaziner Family Undergraduate Research Fund, UPenn Center for Undergraduate Research and Fellowships ($1,000).</span></li>
+        <li><time>2022</time><span>USACO Gold Division.</span></li>
+        <li><time>2021</time><span>AIME Qualifier.</span></li>
+      </ul>
+    </details>
 
-          <!-- ============ RESEARCH ============ -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:8px 16px 4px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  My research interests include:
-                </p>
-                <ul>
-                  <li>Looped transformers and their generalization</li>
-                  <li>Data selection for LLM post-training</li>
-                  <li>Multi-hop question answering and exhaustive search with LLM agents</li>
-                </ul>
-                <p style="font-size:small;margin:12px 0 0;">* denotes equal contribution.</p>
-              </td>
-            </tr>
-          </tbody></table>
+    <details class="archive" id="projects">
+      <summary><h2>Selected Projects</h2></summary>
+      <article class="project">
+        <div class="project-media"><video muted loop playsinline onloadeddata="this.playbackRate = 1.5;" controls="" preload="none"> <source src="images/drone_racing.mp4" type="video/mp4"> Drone racing simulation video. </source></video></div>
+        <div>
+          <h3>Drone Racing Policy Learning with Reinforcement Learning</h3>
+          <ul>
+            <li>Final project for ESE 6510 (Physical Intelligence: Science and Systems); placed third in the final class challenge on deploying a simulation-trained policy on a real drone.</li>
+            <li>Reproduced a drone racing control method in NVIDIA Isaac Lab with PPO.</li>
+            <li>Tuned observations, reward shaping, and domain randomization for high-speed, robust policy learning.</li>
+          </ul>
+        </div>
+      </article>
 
-          <!-- ============ PUBLICATIONS ============ -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <article class="project">
+        <div class="project-media"><a href="images/embedding_nonisotropic.png"><img src="images/embedding_nonisotropic.png" alt="Training loss curves for transformer in-context learning" loading="lazy"></a></div>
+        <div>
+          <h3>Training Dynamics of Transformers for In-Context Learning</h3>
+          <ul>
+            <li>Built a PyTorch benchmarking suite for transformer in-context linear regression.</li>
+            <li>Compared transformer attention dynamics with OLS and Ridge baselines.</li>
+          </ul>
+        </div>
+      </article>
 
-            <tr>
-              <td style="padding:8px 16px;width:100%;vertical-align:middle">
-                <a href="https://arxiv.org/pdf/2610.03702">
-                  <span class="papertitle">LESSER: Post-Training Data Selection with Output-Layer Gradients</span>
-                </a>
-                <br>
-                <strong>Lyuxin David Zhang</strong>,
-                <a href="https://www.cis.upenn.edu/~exwong/">Eric Wong</a>,
-                <a href="https://www.surbhigoel.com/">Surbhi Goel</a>,
-                <a href="https://antonxue.github.io/">Anton Xue</a>
-                <br>
-                <em>Under review at ICLR 2027</em>
-                <br>
-                Preliminary version,
-                <a href="https://sites.google.com/view/moss-colm-2026/home">Workshop on Methods and Opportunities at Small Scale</a> @ COLM, 2026
-                <br>
-                <a href="https://arxiv.org/abs/2610.03702">arXiv</a> &nbsp;/&nbsp;
-                <a href="https://arxiv.org/pdf/2610.03702">pdf</a> &nbsp;/&nbsp;
-                <a href="https://github.com/davidzhangsan/LESSER">code</a>
-              </td>
-            </tr>
+      <article class="project">
+        <div class="project-media"><a href="images/underflow.png"><img src="images/underflow.png" alt="Underflow system architecture: CLI, FastAPI backend, MySQL, and Next.js dashboard" loading="lazy"></a></div>
+        <div>
+          <h3>Repository Intelligence CLI</h3>
+          <ul>
+            <li>Built a FastAPI/Uvicorn and MySQL backend with a CLI client using the GitHub and OpenAI APIs.</li>
+            <li>Scanned repositories and recommended performance and cost improvements.</li>
+            <li>Winner of Best Use of DeFANG at PennApps 2024.</li>
+          </ul>
+        </div>
+      </article>
+    </details>
 
-            <tr>
-              <td style="padding:8px 16px;width:100%;vertical-align:middle">
-                <span class="papertitle">MExAS: Measuring Exhaustive Agentic Search</span>
-                <br>
-                <strong>Lyuxin David Zhang</strong>,
-                <a href="https://tomerwolgithub.github.io/">Tomer Wolfson</a>,
-                <a href="https://jchy20.github.io/">Hongyi James Cai</a>,
-                <a href="https://www.cis.upenn.edu/~danroth/">Dan Roth</a>
-                <br>
-                <em>Coming soon</em>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:8px 16px;width:100%;vertical-align:middle">
-                <a href="https://aclanthology.org/2026.findings-acl.1829.pdf">
-                  <span class="papertitle">Decomposed Prompting Does Not Fix Knowledge Gaps, But Helps Models Say &ldquo;I Don't Know&rdquo;</span>
-                </a>
-                <br>
-                <a href="https://dhruvmadhwal.github.io/">Dhruv Madhwal</a>*,
-                <strong>Lyuxin David Zhang</strong>*,
-                <a href="https://www.cis.upenn.edu/~danroth/">Dan Roth</a>,
-                <a href="https://tomerwolgithub.github.io/">Tomer Wolfson</a>,
-                <a href="https://vgupta123.github.io/">Vivek Gupta</a>
-                <br>
-                <em>Findings of ACL</em>, 2026
-                <br>
-                <a href="https://arxiv.org/abs/2602.04853">arXiv</a> &nbsp;/&nbsp;
-                <a href="https://aclanthology.org/2026.findings-acl.1829.pdf">pdf</a> &nbsp;/&nbsp;
-                <a href="https://github.com/dhruvmadhwal/disagreement-based-abstention">code</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:8px 16px;width:100%;vertical-align:middle">
-                <a href="https://arxiv.org/pdf/2505.13855">
-                  <span class="papertitle">Domain Gating Ensemble Networks for AI-Generated Text Detection</span>
-                </a>
-                <br>
-                Arihant Tripathi*,
-                <a href="https://liamdugan.com/">Liam Dugan</a>*,
-                Charis Gao,
-                Maggie Huan,
-                Emma Jin,
-                Peter Zhang,
-                <strong>Lyuxin David Zhang</strong>,
-                Julia Zhao,
-                <a href="https://www.cis.upenn.edu/~ccb/">Chris Callison-Burch</a>
-                <br>
-                <em>arXiv preprint</em>, 2025
-                <br>
-                <a href="https://arxiv.org/abs/2505.13855">arXiv</a> &nbsp;/&nbsp;
-                <a href="https://arxiv.org/pdf/2505.13855">pdf</a>
-              </td>
-            </tr>
-
-          </tbody></table>
-
-          <!-- ============ AWARDS ============ -->
-          <details class="section-dropdown section-dropdown-right">
-            <summary><h2>Fellowships &amp; Awards</h2></summary>
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px 16px;width:25%;vertical-align:top">2026</td>
-              <td style="padding:0px 16px;width:75%;vertical-align:top">
-                College of Arts &amp; Sciences Travel Grant, UPenn Center for Undergraduate Research and Fellowships ($1,500).
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:0px 16px;width:25%;vertical-align:top">2026</td>
-              <td style="padding:0px 16px;width:75%;vertical-align:top">
-                Ruth Marcus Kanter College Alumni Society Undergraduate Research Grant, UPenn Center for Undergraduate Research and Fellowships ($1,000).
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:0px 16px;width:25%;vertical-align:top">2026</td>
-              <td style="padding:0px 16px;width:75%;vertical-align:top">
-                Modal Academics Computing Grant, Modal Labs ($2,000).
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:0px 16px;width:25%;vertical-align:top">2026</td>
-              <td style="padding:0px 16px;width:75%;vertical-align:top">
-                Tinker Research Grant, Thinking Machines Lab ($5,000).
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:0px 16px;width:25%;vertical-align:top">2024</td>
-              <td style="padding:0px 16px;width:75%;vertical-align:top">
-                Pincus&ndash;Magaziner Family Undergraduate Research Fund, UPenn Center for Undergraduate Research and Fellowships ($1,000).
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:0px 16px;width:25%;vertical-align:top">2022</td>
-              <td style="padding:0px 16px;width:75%;vertical-align:top">
-                USACO Gold Division.
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:0px 16px;width:25%;vertical-align:top">2021</td>
-              <td style="padding:0px 16px;width:75%;vertical-align:top">
-                AIME Qualifier.
-              </td>
-            </tr>
-
-          </tbody></table>
-          </details>
-
-          <!-- ============ PROJECTS ============ -->
-          <details class="section-dropdown section-dropdown-right">
-            <summary><h2>Selected Projects</h2></summary>
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:16px;width:25%;vertical-align:top">
-                <video muted autoplay loop playsinline style="width:100%;border-radius:4px;animation:none;filter:none;" onloadeddata="this.playbackRate = 1.5;">
-                  <source src="images/drone_racing.mp4" type="video/mp4">
-                  Drone racing simulation video.
-                </video>
-              </td>
-              <td style="padding:16px;width:75%;vertical-align:top">
-                <span class="papertitle">Drone Racing Policy Learning with Reinforcement Learning</span>
-                <ul>
-                  <li>Final project for ESE 6510 (Physical Intelligence: Science and Systems); placed third in the final class challenge on deploying a simulation-trained policy on a real drone.</li>
-                  <li>Reproduced a drone racing control method in NVIDIA Isaac Lab with PPO.</li>
-                  <li>Tuned observations, reward shaping, and domain randomization for high-speed, robust policy learning.</li>
-                </ul>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:16px;width:25%;vertical-align:top">
-                <a href="images/embedding_nonisotropic.png"><img src="images/embedding_nonisotropic.png" width="100%" style="border-radius:4px;" alt="Training loss curves for transformer in-context learning"></a>
-              </td>
-              <td style="padding:16px;width:75%;vertical-align:top">
-                <span class="papertitle">Training Dynamics of Transformers for In-Context Learning</span>
-                <ul>
-                  <li>Built a PyTorch benchmarking suite for transformer in-context linear regression.</li>
-                  <li>Compared transformer attention dynamics with OLS and Ridge baselines.</li>
-                </ul>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:16px;width:25%;vertical-align:top">
-                <a href="images/underflow.png"><img src="images/underflow.png" width="100%" style="border-radius:4px;" alt="Underflow system architecture: CLI, FastAPI backend, MySQL, and Next.js dashboard"></a>
-              </td>
-              <td style="padding:16px;width:75%;vertical-align:top">
-                <span class="papertitle">Repository Intelligence CLI</span>
-                <ul>
-                  <li>Built a FastAPI/Uvicorn and MySQL backend with a CLI client using the GitHub and OpenAI APIs.</li>
-                  <li>Scanned repositories and recommended performance and cost improvements.</li>
-                  <li>Winner of Best Use of DeFANG at PennApps 2024.</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody></table>
-          </details>
-
-          <!-- ============ TEACHING ============ -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Teaching</h2>
-                <p>
-                  Teaching Assistant at the University of Pennsylvania for
-                  CIS 5200 (Machine Learning),
-                  ESE 5460 (Principles of Deep Learning), and
-                  CIS 2450 (Big Data Analytics).
-                  Tutor for MATH 3120 (Linear Algebra).
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <!-- ============ FOOTER ============ -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  Template based on <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
-        </td>
-      </tr>
-    </table>
-  </body>
+    <section id="teaching" aria-labelledby="teaching-title">
+      <h2 id="teaching-title">Teaching</h2>
+      <p>Teaching Assistant at the University of Pennsylvania for CIS 5200 (Machine Learning), ESE 5460 (Principles of Deep Learning), and CIS 2450 (Big Data Analytics). Tutor for MATH 3120 (Linear Algebra).</p>
+    </section>
+  </main>
+  <footer>Template based on <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron’s website</a>.</footer>
+</body>
 </html>
